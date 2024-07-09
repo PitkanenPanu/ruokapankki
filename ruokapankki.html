@@ -1,0 +1,191 @@
+<html><head><base href="https://ruokapankki.fi">
+<title>Ruokapankki - Apua ja tukea tarvitseville</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root {
+    --primary-color: #4a90e2;
+    --secondary-color: #f5f5f5;
+    --text-color: #333;
+    --accent-color: #e67e22;
+    --facebook-color: #3b5998;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+  }
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  nav {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 1rem;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+  }
+  section {
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  h1, h2 {
+    color: var(--primary-color);
+  }
+  .cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  .cta-button:hover {
+    background-color: #d35400;
+  }
+  .facebook-button {
+    display: inline-block;
+    background-color: var(--facebook-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  .facebook-button:hover {
+    background-color: #2d4373;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+  }
+  .image-container img {
+    max-width: 48%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  #map {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Ruokapankki</h1>
+    <p>Apua ja tukea tarvitseville</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#tietoa">Tietoa meistä</a></li>
+      <li><a href="#palvelut">Palvelut</a></li>
+      <li><a href="#auta">Auta meitä</a></li>
+      <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="tietoa">
+      <h2>Tietoa meistä</h2>
+      <p>Ruokapankki on voittoa tavoittelematon hyväntekeväisyysjärjestö, joka tarjoaa ruoka-apua ja tukea vähävaraisille ja apua tarvitseville. Toimintamme perustuu lahjoituksiin ja vapaaehtoistyöhön.</p>
+      <p>Tavoitteenamme on vähentää nälkää ja ruokahävikkiä yhteiskunnassamme sekä edistää sosiaalista oikeudenmukaisuutta.</p>
+      <div class="image-container">
+        <img src="https://ruokapankki.fi/images/food-need-1.jpg" alt="Pitkä jono ihmisiä odottamassa ruokajakelua, harmaa sävyinen valokuva" width="480" height="320">
+        <img src="https://ruokapankki.fi/images/food-need-2.jpg" alt="Vapaaehtoinen ojentamassa ruokakassia hymyilevälle vanhukselle, lämmin värimaailma" width="480" height="320">
+      </div>
+      <a href="https://www.facebook.com/ruokapankkifi" class="facebook-button" target="_blank">Seuraa meitä Facebookissa</a>
+    </section>
+
+    <section id="palvelut">
+      <h2>Palvelumme</h2>
+      <ul>
+        <li>Ruokajakelut: Järjestämme säännöllisiä ruokajakeluja eri puolilla kaupunkia.</li>
+        <li>Ruokakassit: Tarjoamme valmiiksi pakattuja ruokakasseja tarvitseville perheille.</li>
+        <li>Lämmin ateria: Tarjoamme lämpimän aterian päivittäin ruokalassamme.</li>
+        <li>Neuvonta: Annamme ohjausta ja neuvontaa muiden tukipalveluiden piiriin.</li>
+      </ul>
+      <p>Palvelumme ovat maksuttomia ja tarkoitettu kaikille apua tarvitseville.</p>
+    </section>
+
+    <section id="auta">
+      <h2>Auta meitä auttamaan</h2>
+      <p>Voit tukea toimintaamme monin tavoin:</p>
+      <ul>
+        <li>Lahjoita ruokaa: Otamme vastaan säilyviä elintarvikkeita.</li>
+        <li>Lahjoita rahaa: Pienikin summa auttaa meitä jatkamaan työtämme.</li>
+        <li>Vapaaehtoistyö: Tule mukaan vapaaehtoiseksi ruokajakeluun tai muihin tehtäviin.</li>
+        <li>Yritysyhteistyö: Yrityksesi voi tukea toimintaamme monin tavoin.</li>
+      </ul>
+      <a href="#yhteystiedot" class="cta-button">Ota yhteyttä ja auta</a>
+    </section>
+
+    <section id="yhteystiedot">
+      <h2>Yhteystiedot</h2>
+      <p><strong>Osoite:</strong> Apukatu 123, 00100 Helsinki</p>
+      <p><strong>Puhelin:</strong> 050 123 4567</p>
+      <p><strong>Sähköposti:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b3daddd5dcf3c1c6dcd8d2c3d2ddd8d8da9dd5da">[email&#160;protected]</a></p>
+      <p><strong>Aukioloajat:</strong></p>
+      <ul>
+        <li>Ma-Pe: 9:00-17:00</li>
+        <li>La: 10:00-14:00 (ruokajakelu)</li>
+        <li>Su: Suljettu</li>
+      </ul>
+      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.9551114913927!2d24.93581731611736!3d60.16694048195992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920a33c5ae81b1%3A0x440e1d5a22a55f46!2sApukatu%20123%2C%2000100%20Helsinki!5e0!3m2!1sfi!2sfi!4v1652345678901!5m2!1sfi!2sfi" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Ruokapankki. Kaikki oikeudet pidätetään.</p>
+    <a href="https://www.facebook.com/ruokapankkifi" class="facebook-button" target="_blank">Seuraa meitä Facebookissa</a>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body></html>
